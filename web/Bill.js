@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    $("#save").click(function(){
+        customer=$("#customer").val();
+        mobile=$("#mobile").val();
+        //alert(customer+"\n"+mobile);
+        $.post("http://localhost:8084/WebApplication1/demobill",{
+            ccustomer:customer,
+            cmobile:mobile
+        },function(data,status){
+            alert(data);
+        });
+      });
+});

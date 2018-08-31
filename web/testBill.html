@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+          <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          
+<script>  
+
+    $(document).ready(function(){
+        
+        $("#searchtxt").keyup(function(){
+            
+          text=  $("#searchtxt").val();
+          
+          
+    $.post("http://localhost:8084/WebApplication1/list.jsp",
+    {
+       val:text
+    },
+    function(data, status){
+      $("#mylocation").html(data);
+    });
+    
+    
+        
+    });
+        
+    });
+
+</script>  
+</head>  
+<body>  
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+    </div>
+     </div>
+  <div class="row">
+      <div class="col-md-12">
+<h1>Search Supplier Detail</h1>  
+<form name="vinform"> 
+<input type="text" name="name"  id="searchtxt" placeholder="enter id to search" >  
+</form>  
+<span id="mylocation"></span>
+</div>
+  </div>
+    </div>
+</body>  
+</html> 

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<title>Menu</title>
+<style>
+*{
+    margin:0px;
+    padding:0px;
+}
+	   body{
+	   background-image:url('background1.jpg');
+	   background-size:cover;
+	   font-family:verdana;
+	   font-size:10px;
+	   margin:0px;
+	   line-height:10px;
+	   }
+     
+.logo{
+    height:24px;
+    width:107px;
+    background:ur("image\img1.png");
+    float:left;
+}	   
+*{
+mergin:0px;
+padding:0px;
+}
+#menu ul{
+list-style:none
+}
+#menu ul li{
+background-color:#4682B4;
+border:1px solid white;
+width:120px;
+height:35px;
+line-height:35px;
+text-align:center;
+float:left;
+position:relative;
+border-radius:10px;
+}
+#menu ul li a{
+text-decoration:none;
+color:white;
+display:block;
+}
+#menu ul li a:hover{
+background-color:#92C7C7;
+border-radius:10px;
+}
+#menu ul ul{
+position:absolute;
+display:none;
+}
+#menu ul li:hover > ul{
+display:block;
+}
+#menu ul ul ul{
+margin-left:120px;
+top:0px;
+}
+
+</style>
+</head>
+<body>
+<div style="position:absolute;left: 45px;right: 0;bottom: 0;top: 0;">
+
+	   <div id="menu" style="margin-left: 185px;">
+	   	<div class="logo" style="margin-left:-50px;float:left;"><img src="image\img1.png" height="38" width="100">
+	   	</div>
+	           <ul>
+			        <li><a href="#">Home</a></li>
+					<li><a href="#">About Supplier</a>
+                                             <ul>
+					<li><a href="#">Supplier Detail</a></li>
+					<li><a href="#">Product Detail</a></li>
+					<li><a href="#">Supplier_Registration</a></li>
+					   </ul>
+                                        </li>
+                                        <li><a href="#">Cycle Detail</a></li>
+					<li><a href="#">Cycle Parts</a>
+					<ul>
+					<li><a href="#">Big Parts</a></li>
+					<li><a href="#">Small Parts</a></li>
+					<li><a href="#">Ranjer Parts</a></li>
+                                        <li><a href="#">Small Thing</a></li>
+					</ul>
+					
+					
+					</li>
+                                        <li><a href="#">Product_Operation</a>
+                                            <ul>
+                                                <li><a href="#">Request Product</a></li>
+                                                <li><a href="#">Registration</a></li>
+                                                <li><a href="#">Receive Product</a></li>
+                                                
+                                            </ul>
+                                        </li>
+					<li><a href="#">About Operator</a>
+					<ul>
+					<li><a href="#">Operator Detail</a></li>
+					<li><a href="#">Operator Registration</a></li>
+					</ul>
+                                        </li>
+					<li><a href="#">Billing</a></li>
+					<li><a href="#">Account</a>
+                                            <ul>
+                                                <li><a href="#">Payment Detail</a><li>
+                                                <li><a href="#">Personal Account</a><li>
+                                            </ul>
+                                        </li>
+
+
+			   </ul>
+
+			   </div>
+			   <div class="logo"><img src="image\img1.png" height="38" width="100">
+
+			  </div>
+    </div>
+
+</body>
+</html>
